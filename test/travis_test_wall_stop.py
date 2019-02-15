@@ -8,7 +8,7 @@ class WallStopTest(unittest.TestCase):
 		with open("/dev/rtlightsensor0","w") as f:
 			f.write("%d %d %d %d\n" % (rf,rs,ls,lf))
 
-		time.sleep(3)
+		time.sleep(0.3)
 
 		with open("/dev/rtmotor_raw_l0","r") as lf,\
 		     open("/dev/rtmotor_raw_r0","r") as rf:
@@ -30,6 +30,6 @@ class WallStopTest(unittest.TestCase):
 if __name__='__main__':
 	time.sleep(3)
 	rospy.init_node('travis_test_wall_stop')
-	rospy.rosrun('pimouse_run_corridor','travis_test_wall_stop',WallStopTest)
+	rostest.rosrun('pimouse_run_corridor','travis_test_wall_stop',WallStopTest)
 
 
