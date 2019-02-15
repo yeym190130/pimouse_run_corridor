@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>pimouse_run_corridor</name>
   <version>0.0.0</version>
   <description>The pimouse_run_corridor package</description>
@@ -52,7 +52,7 @@
   <!-- <build_depend>rospy</build_depend>
   	<build_export_depend>rospy</build_export_depend>
   	<exec_depend>rospy</exec_depend> -->
-  <run_depend>pimouse_ros</run_depend>
+  <exec_depend>pimouse_ros</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
