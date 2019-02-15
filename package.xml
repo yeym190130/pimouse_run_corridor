@@ -54,7 +54,7 @@
   <build_export_depend>rospy</build_export_depend>
   <build_export_depend>pimouse_ros</build_export_depend>
   <exec_depend>rospy</exec_depend>
-  <exec_depend>pimouse_ros</exec_depend>
+  <run_depend>pimouse_ros</run_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
